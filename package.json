@@ -1,10 +1,12 @@
-{
-  "name": "portfolio.json",
+{  "homepage": "https://Vijju1606.github.io/portfolio.react",
+   "name": "portfolio.json",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"

@@ -1,0 +1,133 @@
+.portfolio-bg {
+  min-height: 100vh;
+  width: 100%;
+  min-width: 100vw;
+  background: transparent; /* background handled by body or parent */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 100px; /* space for navbar */
+  padding-bottom: 60px; /* space for footer */
+  box-sizing: border-box;
+
+}
+
+.portfolio-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+.portfolio-heading {
+  color: #01eeff;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 32px 0 24px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.certificates-row,
+.projects-row {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.certificate-card,
+.project-card {
+  flex: 1 1 350px;
+  min-width: 300px;
+  border-radius: 48px;
+  padding: 32px 28px;
+  color: #fff;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+  margin-bottom: 0;
+  position: relative;
+}
+
+.red-gradient {
+  background: linear-gradient(135deg, #ff5858 60%, #ffae70 100%);
+}
+.red-gradient:hover{
+    transform: scale(1.01);
+    transition: transform 0.3s;
+}
+.yellow-gradient {
+  background: linear-gradient(90deg, #ffe259 0%, #ffa751 100%);
+}
+.yellow-gradient:hover{
+    transform: scale(1.01);
+    transition: transform 0.3s;
+}
+
+.green-gradient {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+.green-gradient:hover{
+    transform: scale(1.01);
+    transition: transform 0.3s;}
+
+.blue-gradient {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+.blue-gradient:hover{
+    transform: scale(1.01);
+    transition: transform 0.3s;
+}
+
+.learn-btn {
+  margin-top: 18px;
+  background: #fff;
+  color: #222;
+  border: none;
+  border-radius: 18px;
+  padding: 8px 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.learn-btn:hover {
+  background: #ed2a6e;
+  color: #fff;
+}
+.view-btn{
+    margin: 20px;
+    margin-top: 18px;
+    background: #01eeff;
+    color: #222;
+    border: none;
+    border-radius: 18px;
+    padding: 8px 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+.view-btn:hover {
+  background: #ed2a6e;
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .certificates-row,
+  .projects-row {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .certificate-card,
+  .project-card {
+    
+    min-width: unset;
+    width: 90%;
+    border-radius: 24px;
+    padding: 18px 12px;
+  }
+  .portfolio-content {
+    padding: 0 8px;
+    margin-top: 110px;
+  }
+}

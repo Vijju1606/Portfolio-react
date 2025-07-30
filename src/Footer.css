@@ -1,0 +1,124 @@
+footer {
+    
+    background: linear-gradient(to right, rgb(16, 2, 85,0.5), rgb(27, 186, 231,0.5));
+    color: #fff;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.footer-container {
+width: 100%;
+    
+    
+    
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    box-sizing: border-box;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    min-width: 180px;
+    
+    
+}
+
+.footer-section h4 {
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #ed2a6e;
+    
+}
+
+.footer-section ul{
+    padding: 0;
+    margin: 20px ;
+    list-style: none;
+}
+.footer-section p,
+.footer-section .social-links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 6px;
+}
+.footer-section ul li:hover {
+    color: #ed2a6e;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: #ed2a6e;
+}
+
+.social-links a {
+    margin-right: 12px;
+}
+
+.footer-container > p {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 14px;
+    color: #eee;
+    opacity: 0.8;
+}
+@media (max-width: 700px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    padding: 0 8px;
+  }
+  .footer-section {
+    min-width: unset;
+    margin-bottom: 18px;
+    text-align: left;
+  }
+  .footer-section h4 {
+    font-size: 1.1em;
+    margin-bottom: 6px;
+  }
+  .footer-section ul {
+    margin: 12px 0;
+  }
+  .footer-section ul li {
+    font-size: 1em;
+    margin-bottom: 4px;
+  }
+  .footer-section p,
+  .footer-section .social-links {
+    font-size: 0.95em;
+  }
+  .social-links a {
+    margin-right: 8px;
+    font-size: 1em;
+  }
+  .footer-container > p {
+    font-size: 12px;
+    margin-top: 12px;
+    padding: 0 4px;
+  }
+}
